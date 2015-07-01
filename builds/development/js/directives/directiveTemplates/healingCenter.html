@@ -1,0 +1,193 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+ 
+ <div class="image-viewer">
+ <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/healing-center/{{device}}.png"/>
+</div>  
+</div>  
+  
+  <div class="device-selection">
+     
+      <button preserve-height class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'tablet'}"
+      ng-click="isTablet()">Tablet</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'phone'}"
+      ng-click="isPhone()">Phone</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop-two'}"
+      ng-click="isDesktopTwo()">Desktop 2</button>
+      
+      <a target="blank" href="http://www.healingcentercincinnati.org"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+    
+     <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'admin-one'}"
+      ng-click="isAdminOne()">CMS 1</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'admin-two'}"
+      ng-click="isAdminTwo()">CMS 2</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'admin-three'}"
+      ng-click="isAdminThree()">CMS 3</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'admin-four'}"
+      ng-click="isAdminFour()">CMS 4</button>
+      
+
+      
+    </div>
+    
+  <div>
+
+  <div class="description">
+    <p>The Healing Center of Cincinnati helps people in times of need by providing groceries, job placement and much more. The site redesign involved a good amount of client interaction and input.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>The Healing Center was in need of an updated site that matched the spirit of the organization and worked responsively. The prior site appeared dated and was a burden on the staff to manage and update.</p>
+    
+  </div>
+  
+  
+<div class="row">  
+  
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>   
+    <p>This project consisted of a discovery, design and development phase. I carried out the entire project which spanned 9 months and resulted in the responsive design and development of the site. The site includes a custom CMS build and a Spanish to English toggle (currrently waiting on Spanish translation of content) and many additional features. 
+    </p>
+    <p>
+    At project completion, the site checked in at just under 10,000 lines of code, an improvement of over the previous site which contained over 100,000 lines of code. This makes for a much more maintainable site now and down the road. 99% of the content is also editable through the custom built CMS, which gives the Healing Center the ability to manage their own content without needing to rely on a developer.</p>
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>Discovery</li>
+      <li>UX design</li>
+      <li>UI design and development</li>
+      <li>NoSQL database design</li>
+      <li>Node.js REST API back-end build</li>
+      <li>Custom CMS build</li>
+      <li>Angular.js front-end build</li>
+      <li>Pre-render.io SEO setup</li>
+      <li>Heroku hosting</li>
+    </ul>
+  </div>
+
+
+
+<div class="sidebar col-md-4" scroll>
+
+<div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/healing-center/admin.png"/>
+    <div class="additonal-caption">
+    <p>A custom admin build was created for easy maintenance and updates. A REST API was created using a mongoDB database and node.js backend.</p>
+    </div>
+    </div>
+    
+    
+  <div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/healing-center/archive.png" alt>
+    <div class="additonal-caption">
+    <p>The prior site was non-responsive and hard to navigate, content was lengthy and non-direct. The site was also very difficult to update. The back-end was merged into Vineyard Cincinnati's but only partially completed, many records were updated directly in the database or hard-coded.</p>
+    </div>
+    </div>  
+    
+    
+    
+  </div>
+    
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/angularjs.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/nodejs-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/npm.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/express.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/bower.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/mongodb.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/sass.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/susy.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/compass-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/gulp.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/git-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/github.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/heroku-Logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/googleapi.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/jquery.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/analytics.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+    </div>
+  </div>
+  
+<!--
+<div id="live-view" class="subHead">
+    <h1>Live&nbsp;View</h1>  
+   <iframe src="http://www.healingcentercincinnati.org" width="100%" height="500">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+</div>  
+-->
+
+<div id="project-notes" class="subHead" scroll>
+    <h1>Project&nbsp;Notes</h1>
+    <h3>Discovery Phase</h3>
+    <p>Sometimes projects don't always progress in a linear path. The redesign and redevelopment of the healing center was a large undertaking and there were many stakeholders involved. The initial plan of progression was to work iteratively and meet with the Board of Directors once a month to review progress and discuss revisions. While this worked well initially, it was quickly realized that there were too many competing, voices and ideas. It was also evident that there wasn't a clear target I was designing for. After several months, I took a step back from the project to make sure everyone agreed on the values of the Healing Center and the goals of the site. I also decided that in order to move forward effectively, we needed one decision maker instead of many, this decision maker, the Executive Director, was now my one point of contact for the project progression instead of a half-dozen decision makers. While the Executive Director did not ignore the rest of the board's opinions, she had the final decision making ability. From this point on, the project moved forward at a steady pace, the scope was defined and agreed upon.</p> 
+    
+    <p>In hindsight, the initial discovery phase would not have just been on my end, from a designers perspective, but would have been a thorough research and discovery phase with client participation. <a href="https://vineyardsandbox.s3.amazonaws.com/Rob/healing-center/case-study.pdf">View Case Study <i class="fa fa-file"></i></a></p>
+    
+    <h3>Calendar</h3>
+    <p>The events calendar is a very important component of the site. Initially a custom calendar was incorporated into the back-end and CMS. Upon further discussion, we realized the majority of events were re-occuring, which would require a good amount of development to configure that logic. Another realization was that the Healing Center already had all of their events in a Google Calendar for staff. I decided that it made the most sense to leverage that calendar. I built on top of the sourcecode for <a href="http://fullcalendar.io/"> fullcalendar.io</a>, which has great integration with Google Calendar, but no mobile version. I also separated their calendar out so that it could be filterable. The end result was a responsive calendar which required no additional work for the Healing Center. They just have to update their Google Calendars as they had been doing and this would be reflected on the site.</p>
+    
+    
+    <h3>CMS</h3>
+    <p>The custom CMS has been a huge success. To quote a Healing Center volunteer, "Wow this is really easy to use!" Using desciptive placeholder text as well as <a href="https://github.com/CodeSeven/toastr">"Toastr.js" notifications</a> helps users know with confidence when a change has succesfully been made. Red and green go a long way, initially an edit button colored red threw a user off, "It looks like the delete button," they said. Keeping in mind that there are colors which are intuitive to users as positive and negative can help guide the user through the interface.</p>
+    
+    <h3>English to Spanish</h3>
+    <p>A feature which the Healing Center was very excited about incorporating was an English to Spanish toggle. This seemed like a lofty proposition, but as my confidence in Angular.js and REST API's grew, I realized a solution. The toggle would set a cookie on the browser to true or false. If true (for Spanish), a call stack of functions would execute, one of which would append a "sp" to the API url of all HTTP calls. In the back-end the English API was duplicated, with "sp" appended to each of them. The user flow would now be exactly they same and thanks to Angular's two way binding, the transition was seemless, without any delay or page refresh to the user. The trasition also works seemlessly on the back-end. A caveat to this logic is that the Spanish and English records for each entry must share a url, for example: /about/missions-and-values would pull do a GET request to api/about for english and api/about-sp for Spanish. The only duplicate content between each record is the url "/about/missions-and-values". This allows for looping through content and pulling back the Spanish record that has the mathcing URL on toggle.</p>
+  <p>This feature is currently hidden from the user until the Healing Center is able to translate the Spanish content.</p>
+    
+    
+    
+
+    
+   
+   
+  </div>
+
+</div>
+</div>

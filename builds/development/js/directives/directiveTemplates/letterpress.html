@@ -1,0 +1,117 @@
+
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+  
+ <div class="image-viewer">  
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/letterpress/{{device}}.png"/>
+</div>  
+ </div> 
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'wedding'}"
+      ng-click="isWedding()">Wedding</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'lighthouse'}"
+      ng-click="isLighthouse()">Lighthouse</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'birth-announcement'}"
+      ng-click="isBirthAnnouncement()">Birth Announcement</button>
+      
+      
+      
+    </div>
+    
+    
+     <div class="device-selection">
+     
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'business-card'}"
+      ng-click="isBusinessCard()">Business Card</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'roy'}"
+      ng-click="isRoy()">Lichtenstein</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'peace'}"
+      ng-click="isHoliday()">Holiday</button>
+      
+      
+    </div>
+    
+    
+  <div>
+
+  <div class="description">
+    <p>Illumination Letterpress is a small letterpress business that I run out of my residence. I focus primarily on wedding invitations, birth announcements and greeting cards. Everything is printed on a half-ton 1897 Challenge-Gordon platen letterpress.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>With a background in drawing, design and typography, for several years I had imagined starting my own letterpress company. I was able to find a press on craigslist in the summer of 2014. The press needed a good amount of restoration and parts that had to be reverse-engineered by local companies.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>Many of my projects involve an initial breif with the clients. This initial brief is typically information seeking on my part and informing them of the options and capabilities of the press. This then results in several design options before ordering materials for the client. Printing on the restored letterpress is a lot of fun, the only restriction is time. In the future I'd like to accelerate the business, the first year has been a learning experience, I hope to push my designs further to explore all of the capabilites a large letterpress has.</p>
+
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>Design</li>
+      <li>Illustration</li>
+      <li>Concept</li>
+      <li>Client Interaction</li>
+      <li>Project Management</li>
+      <li>Letterpress Printing</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/letterpress/press.png" alt>
+    <div class="additonal-caption">
+    <p>Everything is printed on a restored 1897 Challenge-Gordon letterpress.</p>
+    </div>
+    </div>
+    
+    
+    
+ 
+</div> 
+ 
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/indesign.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+    </div>
+  </div>
+  
+ </div>
+  </div>
+  </div>
+  </div>

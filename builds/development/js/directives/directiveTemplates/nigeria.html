@@ -1,0 +1,114 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+ <div class="display-images">
+ 
+ 
+ <div class="display-images">
+<div class="image-viewer">   
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/nigeria/{{device}}.png"/>
+</div> 
+ </div>
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'tablet'}"
+      ng-click="isTablet()">Tablet</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'phone'}"
+      ng-click="isPhone()">Phone</button>
+      
+      <a target="blank" href="https://www.vineyardcincinnati.com/index.php?vcpgid=nigeria-map"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+    
+    <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'map'}"
+      ng-click="isMap()">Map View</button>
+      
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>H2O Nigeria is a project that aims to provide sources for clean drinking water in villages in and around Jos, Nigeria. Vineyard Cincinnati, in partnership with Self Sustaining Enterprises Nigeria launched the project in 2008. The project, which spanned 7 years helped drill 80 boreholes to provide clean drinking water.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>As the H2O Nigeria project came to a close, I was concurrently working on several other sites. The project breif was very simple, create a google map had markers to visualize the boreholes throughout Nigeria. The project quickly became very meaningful and given a week and a half project deadline, I used an archive of images, videos and a spreadsheet of data to put the site together leveraging Google Maps API and Angular.js</p>
+    
+  </div>
+  
+  
+<div class="row">  
+  
+  <div class="subHead <col-md-12>  2</col-md-12>" scroll>
+    <h1>Scope</h1>   
+    <p>This project spanned a week in length. My previous experience with Google Maps API and Angular.js helped speed up the development of the site. A responsive design was also incorporated since Google Analytics show mobile devices hitting the Vineyard site at nearly 50%. Due to the site consisting of a single page for navigation and one type of data, which likely would not alter in the future, an internal JSON file was used to pass data into Angular.js.  
+    </p>
+   
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>UX design</li>
+      <li>UI design and development</li>
+      <li>Angular.js, responsive front-end build</li>
+    </ul>
+  </div>
+
+
+
+
+    
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/angularjs.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/googleapi.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/jquery.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/foundation3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+    </div>
+  </div>
+  
+  
+  <div id="project-notes" class="subHead" scroll>
+    <h1>Project&nbsp;Notes</h1>
+    <p>This video, which was put together by the Vineyard productions team, explains project H2O in greater detail.</p>
+    
+   <iframe ng-if="!mobile" src="https://player.vimeo.com/video/101029511" frameborder="0" width="680" height="382"></iframe>
+   
+   <iframe ng-if="mobile" src="https://player.vimeo.com/video/101029511" frameborder="0" width="430" height="242"></iframe>
+   
+  </div>
+  
+  
+
+</div>
+</div>

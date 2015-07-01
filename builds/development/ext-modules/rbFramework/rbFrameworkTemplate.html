@@ -1,0 +1,46 @@
+<div class="title-bar">
+ <div class="row">
+  <div class="logo-area col-sm-9">
+<!--    <img class="icon" ng-src="{{iconFile}}" />-->
+    <div class="title-area">
+      <p class="logo-title">{{title}} </ng-if>
+      <span ng-if="isMenuButtonVisible"> <br></span>
+      <span class="subtitle">{{subtitle}}</span>
+      <span ng-if="isMenuButtonVisible"> <br></span>
+      <span ng-if="routeTitle"> 
+      <span ng-if="!isMenuButtonVisible"> |</span>
+      </ng-if>{{routeTitle || ''}}</p>
+
+    </div>
+    
+    <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()"
+       class="collapsed-menu pull-right">
+        <button type="button" class="btn nav-button">
+          <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="right-side-controls col-sm-3" ng-if="!isMenuButtonVisible">
+    <ul>
+      <li><a ng-class="{'about-active': aboutActive}" href="/#/about">ABOUT</a></li>
+      <li><a target="blank" href="https://vineyardsandbox.s3.amazonaws.com/Rob/byrd_resume.pdf">RESUME</a></li>
+<!--      <li><a href="contact">Contact</a></li>-->
+    </ul>
+  </div>
+  
+</div>
+</div>
+<div ng-transclude></div>
+
+
+<div ng-view class="view slide" ng-class="{'view-full-width': !isMenuVertical || !isMenuVisible}">
+  
+</div>

@@ -1,0 +1,86 @@
+
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+ 
+  <div class="image-viewer">
+  <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/esh/{{device}}.png"/>
+</div>  
+</div> 
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'print-ad'}"
+      ng-click="isPrintAd()">Print Ad</button>
+      
+      
+
+      
+      <a target="blank" href="http://www.nationalunderwriter.com/"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>EasternShoreHousing.com was a small start-up attempt for a new construction home buying site, which ultimately failed. I was one of two designers on the project, in charge of the UX design and print materials.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>In the summer of my Junior year I had the opportunity to work with a very small startup group. Small being a total of 3 people and myself. I was one of two designers and was able to help conceive the front-end design for a social media housing page. The page centered around new construction on the Delmarva penninsula. We had lofty ambitions and it was a learning experience in design as well as start-ups. Along with being a front-end developer I was in charge of the print and web marketing.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-12" scroll>
+    <h1>Scope</h1>
+    
+    <p>Start-ups can be excited and consuming. The team and I spent countless nights as well as the typical 40 hour work week preparing EasternShoreHousing.com for launch. I worked out of Delaware at the time with  a designer in NYC. We would send eachother mock-ups back and forth and work with an off-shore development team to help realize our design into a working site.</p>
+
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>UX Design</li>
+      <li>Print Desing</li>
+      <li>Concept Development</li>
+      <li>Flash Animation</li>
+      <li>Print Preperation</li>
+    </ul>
+  </div>
+
+
+ 
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/indesign.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/illustrator.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/flash.png" alt></div>
+
+    </div>
+  </div>
+  
+ </div>
+  </div>
+  </div>
+  </div>

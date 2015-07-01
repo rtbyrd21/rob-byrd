@@ -1,0 +1,103 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+  
+     <div class="image-viewer">  
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/summit/{{device}}.png"/>
+</div>  
+</div>  
+  
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'logos'}"
+      ng-click="isLogos()">Logos</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'ad'}"
+      ng-click="isAdvertisement()">Advertisement</button>
+      
+      
+
+      
+      <a target="blank" href="http://www.nationalunderwriter.com/"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>Summit Business Media was my first professional level design experience. There was a good range of work, from branding to animation and advertisements.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>Coming out of undergraduate school I had my eyes set on becoming a Flash Designer. I really enjoyed the challenge that came with translating static media into animation. Unfortunately, around the same time, it became evident that Flash was not going to be prevalent much longer. Nowadays, many of the Flash ads I had designed would be disregardered as an annoyance on the side of a web page; however, years later the experience in Actionscript would prove very useful in learning Javascript. </p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>I worked on a wide variety of collateral material at Summit Business Media. I also had the opportunity to design flash banners on high-traffic sites. With this being my first professional experience post-college, it was an invaluable learning experience as I was able to work with many different Art Directors and projects.</p>
+
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>Design</li>
+      <li>Illustration</li>
+      <li>Concept</li>
+      <li>Flash Animation</li>
+      <li>Print Preperation</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="subHead" scroll>
+    <h1>Awards</h1>
+     <h3>2011</h3>
+    <ul>Company Logo redesign
+      <li><strong>First Place</strong></li>
+    </ul>
+  
+    
+    
+    
+    </div>
+    
+    
+    
+ 
+</div> 
+ 
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/indesign.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/illustrator.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/flash.png" alt></div>
+
+    </div>
+  </div>
+  
+ </div>
+  </div>
+  </div>
+  </div>

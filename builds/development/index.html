@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+ <base href="/" />
+  <meta charset="UTF-8">
+  <title>Rob Byrd</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script src="//use.typekit.net/axs7hqb.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+  
+  
+  <script src="ext-modules/rbMenu/rbMenuModule.js"></script>
+  <script src="ext-modules/rbMenu/rbMenuController.js"></script>
+  <script src="ext-modules/rbMenu/rbMenuDirective.js"></script>
+  <script src="ext-modules/rbMenu/rbMenuItemDirective.js"></script>
+  <script src="ext-modules/rbMenu/rbMenuGroupDirective.js"></script>
+  
+  <script src="ext-modules/rbDashboard/rbDashboardModule.js"></script>
+
+  
+  <script src="ext-modules/rbFramework/rbFrameworkModule.js"></script>
+  <script src="ext-modules/rbFramework/rbFrameworkDirective.js"></script>
+  <script src="ext-modules/rbFramework/rbFrameworkController.js"></script>
+  
+ 
+  
+  <script src="js/app.js"></script>
+  <script src="js/appRouteConfig.js"></script>
+   <script src="js//directives/rbHealingCenterDirective.js"></script>
+  <script src="js//directives/rbSmallThingsDirective.js"></script>
+  <script src="js//directives/rbNigeriaDirective.js"></script>
+  <script src="js//directives/rbVinBlogDirective.js"></script>
+  <script src="js//directives/rbHomeDirective.js"></script>
+  <script src="js//directives/rbVisibleLanguageDirective.js"></script>
+  <script src="js//directives/rbIlluminationSiteDirective.js"></script>
+  <script src="js//directives/rbAboutDirective.js"></script>
+  <script src="js//directives/rbTempoVicesDirective.js"></script>
+  <script src="js//directives/rbTempoGenerationDirective.js"></script>
+  <script src="js//directives/rbTempoFutureDirective.js"></script>
+  <script src="js//directives/rbCoffeyCommunicationsDirective.js"></script>
+  <script src="js//directives/rbSummitMediaDirective.js"></script>
+  <script src="js//directives/rbEshDirective.js"></script>
+  <script src="js//directives/rbLetterpressDirective.js"></script>
+  <script src="js//directives/rbArtworkDirective.js"></script>
+  
+</head>
+<body class="container-fluid">
+
+  <rb-framework title="ROB BYRD"
+                subtitle="design & development"
+                icon-file="">
+      <rb-menu>
+        <rb-menu-group label="Web" icon="" route="">
+          <rb-menu-item label="Healing Center" icon="" route="healing-center">
+            </rb-menu-item>
+          <rb-menu-item label="Small Things" icon="" route="smallthings"></rb-menu-item>
+          <rb-menu-item label="H2O Nigeria" route="nigeria"></rb-menu-item>
+          {{isMobile}}
+          <rb-menu-item label="Vineyard Blog" icon="" route="vineyard-blog"></rb-menu-item>
+          <rb-menu-item label="Visible Language" icon="" route="visible-language"></rb-menu-item>
+          <rb-menu-item label="Illumination Letterpress" icon="" route="illumination-site"></rb-menu-item>
+          <rb-menu-item label="ESH.com" icon="" route="esh"></rb-menu-item>
+        </rb-menu-group>
+        
+        <rb-menu-group label="Publication" icon="">
+           <rb-menu-item label="Coffey Communications" icon="" route="coffey-communications"></rb-menu-item>
+           
+           <rb-menu-item label="Summit Media" icon="" route="summit-media"></rb-menu-item>
+            <rb-menu-group label="Tempo Magazine" icon="">
+                <rb-menu-item label="Vices Virtues" icon="" route="tempo-vices"></rb-menu-item>
+                <rb-menu-item label="Generation" icon="" route="tempo-generation"></rb-menu-item>
+                <rb-menu-item label="Future" icon="" route="tempo-future"></rb-menu-item>
+            </rb-menu-group> 
+        </rb-menu-group>
+        
+        
+
+        <rb-menu-item label="LETTERPRESS" icon="" route="letterpress" class="solo"></rb-menu-item>
+        <rb-menu-item label="ARTWORK" icon="" route="artwork" class="solo"></rb-menu-item>
+        
+      
+        <rb-menu-item  label="ABOUT" icon="" route="about" class="solo mobile-only"></rb-menu-item>
+        <rb-menu-item  label="RESUME" icon="" route="resume" class="solo mobile-only"></rb-menu-item>
+        
+      </rb-menu>
+      
+  </rb-framework>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63580743-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

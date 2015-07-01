@@ -1,0 +1,91 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+<div class="status in-progress">This site is currently being redesigned and redeveloped.</div>
+
+ <div class="display-images">
+ 
+  <div class="image-viewer">
+  <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/illumination-site/{{device}}.png"/>
+</div>  
+</div>
+  <div class="device-selection">
+     
+       <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'tablet'}"
+      ng-click="isTablet()">Tablet</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'phone'}"
+      ng-click="isPhone()">Phone</button>
+      
+      
+<!--      <a target="blank" href="http://www.byrd-design.com/illumination/"><button class="btn"><i class="fa fa-link"></i></button></a>-->
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>This site came about as a necessity to go along with my letterpress business. Clients needed a place to view my work and also learn about the process of letterpress. This site aims to be eductional, informative and also showcase the work I have done.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>My previous experience with HTML and CSS before building this site was emails designed for previous employers. The site underwent several versions as my experience knowledge of responsive design and javascript grew. While this site was a huge acomplishment at the time, I am much more knowledgable and versed in development and design practices a few years later. A redesign and development is planned for the near future, for now the site has been taken down as it doesn't accurately reflect Illumination Letterpress as I would like for it to.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-12" scroll>
+    <h1>Scope</h1>
+    
+    <p>This site was a challenge to learn as much as possible, as quick as possible to have a website live that could reflect Illumination Letterpress and communicate it's message effectively. The site which took around a month was probably 90% learning through tutorials and 10% coding and design. This site served as a launching point for my development career as I quickly grasped the concepts of HTML and CSS and was eager to understand Javascript better so I could execute my design background more effectively. 
+    </p>
+    
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>Design</li>
+      <li>Responsive Front-end on Bootstrap</li>
+      <li>Hosting</li>
+    </ul>
+  </div>
+
+
+
+ 
+</div>
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/js.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/bootstrap.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</div>

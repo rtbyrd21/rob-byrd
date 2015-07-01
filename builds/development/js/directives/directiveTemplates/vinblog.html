@@ -1,0 +1,107 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+ 
+  
+  <div class="display-images">
+  <div class="image-viewer">
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/blog/{{device}}.png"/>
+</div>
+ </div>
+
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'tablet'}"
+      ng-click="isTablet()">Tablet</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'phone'}"
+      ng-click="isPhone()">Phone</button>
+      
+      <a target="blank" href="http://blog.vineyardcincinnati.com"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>The Vineyard Blog is an external site with hosts the articles and stories of various staff members. The site helps the church connect with their users and echoes the voice of the Vineyard.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>In an increased effort to connect with users an external blog was created for the staff. The site could be accessed directly, but would often serve as a way to link article to the Vineyard's social media pages. While a WordPress blog was the brought up by the team, I did not want to limit us to WordPress template, widgets and security concerns that come along with WordPress. This site was a perfect candidate for a smaller Django CMS site, in which we could customize it to fit our needs. The site also had to tie into the current site design and be setup to easily change styles once the new Vineyard website was completed.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>This project consisted in length of several weeks from start of code to final DNS transfer and hosting in Heroku. The site navigation is very minimal and came about from asking questions from content editors regarding what type of content they will be adding, what features would be beneficial in the CMS, how often they will be posting, what categories, how many categories etc... 
+    </p>
+    <p>
+    At completion the site sees much higher traffic than expected. A mobile-first, clean and clear design helps users focus on the content and easily navigate the site. The CMS ended up being much easier for the contentmanagers to use than WordPress blog pages they were used to working in.</p>
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>UX design</li>
+      <li>MySQL Database design</li>
+      <li>Custom CMS build</li>
+      <li>Responsive Front-end with Susy and Breakpoint</li>
+      <li>Heroku hosting</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/blog/admin.png" alt>
+    <div class="additonal-caption">
+    <p>Django provides an admin page based on the database design of the models. A simple WYSIWG editor was added and scheduling of posts. User Registration is also a feature Django helps by providing boilerplate models.</p>
+    </div>
+    </div>
+    
+ 
+</div> 
+ 
+</div>
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/django.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/python.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/mysql.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/jquery.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/susy.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/gulp.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/git-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/github.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/heroku-Logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/analytics.png" alt></div>
+    </div>
+  </div>
+  
+
+</div>
+</div>

@@ -1,0 +1,91 @@
+
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+
+   <div class="image-viewer">
+    <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/artwork/{{device}}.png"/>
+</div>  
+</div>  
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'charcoal'}"
+      ng-click="isCharcoal()">Charcoal 1</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'charcoal-two'}"
+      ng-click="isCharcoalTwo()">Charcoal 2</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'oil'}"
+      ng-click="isOil()">Oil</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'print'}"
+      ng-click="isPrint()">Print</button>
+      
+      
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>The human expression is a powerful thing. I greatly admire the work of John Singer Sargent and Robert Henri. The majority of my undergraduate career was spent studying the figure and portraiture.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+<div class="row">  
+  <div class="subHead col-md-8" scroll>
+    <h1>Context</h1>
+    <p>While fine art may seem completely unrelated to design and development, that's not the case at all. Drawing and Painting is a skill of reducing the form to shapes, lines, weights of strokes etc. These are all methods of abstraction and pattern detection...which are relate directly to information architecture and writing modular code. Not to mention composition, contrast, color theory...etc. I'll always consider myself a designer before a developer and an artist before a designer. In the end though, all of these areas boil down to abstracting a complex issue into the most effective means of communication and structure.</p>
+    
+  </div>
+  
+  
+ <div class="sidebar col-md-4" scroll>
+<div class="subHead" scroll>
+    <h1>Awards</h1>
+     <h3>2009</h3>
+    <ul>Bridges Interdisciplinary Journal
+      <li><strong>First Place and Grant</strong></li>
+    </ul>
+    <ul>Archarios Magazine
+      <li><strong>Best of Show</strong></li>
+    </ul>
+    
+    <h3>2008</h3>
+    <ul>Archarios Magazine
+      <li><strong>Best of Show</strong></li>
+    </ul>
+    <h1>Exhibitions</h1>
+    <h3>2012</h3>
+    <ul>The Fire House Gallery of Louisville, Georgia
+      <li>20/20 Vision 5th Edition, The Art of Contemporary University Printmaking</li>
+    </ul>
+    
+    
+    </div>
+    
+    
+    
+ 
+</div> 
+
+</div>
+  
+ </div>
+  </div>
+  </div>
+  </div>

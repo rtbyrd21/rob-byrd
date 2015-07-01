@@ -1,0 +1,109 @@
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+ 
+ <div class="image-viewer">   
+<div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/coffey/{{device}}.png"/>
+</div>  
+ </div> 
+  
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'heart'}"
+      ng-click="isIllustration1()">Illustration 1</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'cover-detail'}"
+      ng-click="isIllustration2()">Illustration 2</button>
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'cover-1'}"
+      ng-click="isCover1()">Cover 1</button>
+
+      <button class="btn" 
+      ng-class="{'active': device === 'spread-1'}"
+      ng-click="isCover2()">Cover 2</button>
+      
+    
+      <a target="blank" href="https://vineyardsandbox.s3.amazonaws.com/Rob/coffey/SouthwestHealth-Fall2013.pdf"><button class="btn"><i class="fa fa-file"></i></button></a>
+      
+      <a target="blank" href="http://www.coffeycomm.com/"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>In the Fall of 2011 I ventured across the country to Walla Walla, Washington. I held the position of Graphic Designer for 2 years, the latter part of which I worked remotely from Cincinnati, Ohio. I had the opportunity to work on a variety of publications with a small creative team. We worked iteratively in a collaborative manner, critiquing, sharing ideas and refining based on peer feedback and client feedback.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>While at Coffey Communications I was able to take on a variety of projects, the majority of which were magazines, but also illustrative work and working with Art Directors on new client templates. The work displayed shows a small sample size of some of my favorite work while I was at Coffey Communications.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>The role of Graphic Designer was very focused at Coffey Communications. There were many members that conrtibuted to a team for each publication. This generally included a Graphic Designer, Art Director, Copy Editor and Client Contact Manager. Each publication typically spanned 1-2 weeks from start to finish and I typically had several projects concurrently.</p>
+
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>Design</li>
+      <li>Illustration</li>
+      <li>Concept</li>
+      <li>Photo Correction</li>
+      <li>Print Preperation</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="subHead" scroll>
+    <h1>Awards</h1>
+     <h3>2013</h3>
+    <ul>Healthcare Advertising Awards
+      <li><strong>Platinum Award</strong></li>
+    </ul>
+  
+    
+    
+    
+    </div>
+    
+    
+    
+ 
+</div> 
+ 
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/indesign.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/illustrator.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+
+    </div>
+  </div>
+  
+ </div>
+  </div>
+  </div>
+  </div>

@@ -1,0 +1,94 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+<div class="status in-progress">This project is currently ongoing.</div>
+
+ <div class="display-images">
+ 
+  <div class="image-viewer">
+  <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/visiblelanguage/{{device}}.png"/>
+</div>  
+</div>
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <a target="blank" href="http://visiblelanguagejournal.com/subscribe/"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>In 2014 the University of Cincinnati inherited the longest running design journal, Visible Language Journal from the Rhode Island School of design. As part of a Graduate Assistanship I was awarded by the University of Cincinnati, I was hired to extend the development and eventual redesign of the website they had inherited from the Rhode Island School of design.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>The website that the university had inherited was built in Python and Django with a mySQL database. It had a responsive design and admin system for entering articles, issues, volumes and authors with a properly normalized databse, but was lacking a much needed subscriber database and online ordering system. There are several hundred subscribers to the journal all over the world, managing their orders had become a large burden on the administrative staff as well fulfilling orders without credit card payment. </p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>This project was a large undertaking, mostly due to the framework and language it was built in being unfamiliar. There were many front-end and back-end feature extensions which were needed. It was determined that the back-end features, a subscriber database and online ordering system were the top priority and the front-end redesign would follow. Before any coding was done, I began by familiarizing myself with Python, then Django and then the website structure itself. 
+    </p>
+    <p>
+      There are many challenges that come with inheriting a project. Fortunately Django has great documentation. The website subscriber base, shopping cart and credit card authorization were completed over the course of the first two semesters as well as maintenance and enhancement to the front-end. A complete re-design and extension on features on the fron-tnd are planned for the 2015-2016 school year.  
+    </p>
+    
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>MySQL Database design</li>
+      <li>Custom CMS build</li>
+      <li>Responsive Front-end on Bootstrap</li>
+      <li>Heroku hosting</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/visiblelanguage/admin.png" alt>
+    <div class="additonal-caption">
+    <p>Building the subscriber database, user registration and shopping cart was a challenge of database normalization which encouraged a large overview, strategic approach.</p>
+    </div>
+    </div>
+    
+ 
+</div> 
+ 
+</div>
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/django.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/python.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/mysql.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/git-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/github.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/heroku-Logo.png" alt></div>
+
+    </div>
+  </div>
+  
+
+</div>
+</div>

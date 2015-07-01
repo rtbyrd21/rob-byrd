@@ -1,0 +1,108 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+
+ <div class="display-images">
+ <div class="image-viewer">  
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/smallthings/{{device}}.png"/>
+</div>  
+ </div>
+ 
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'desktop'}"
+      ng-click="isDesktop()">Desktop</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'tablet'}"
+      ng-click="isTablet()">Tablet</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'phone'}"
+      ng-click="isPhone()">Phone</button>
+      
+      <a target="blank" href="http://www.smallthingsgreatlove.com"><button class="btn"><i class="fa fa-link"></i></button></a>
+      
+    </div>
+  <div>
+
+  <div class="description">
+    <p>This website was created as part of an annual outreach program done by Vineyard Cincinnati. Thousands of free bottles of water are handed out with "smallthingsgreatlove.com" printed on them. The website is meant to serve as a place for more information as well as a place to share stories of how the outrach has impacted their lives.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>smallthingsgreatlove.com was in need of a re-design. The site was very outdated in appearance and did not offer clear enough content and site architecture to be very useful. The original site was also created before smartphones or modern browsers. A responsive, engaging, well structured hierarchy was the overarching goal.</p>
+    
+  </div>
+  
+  <div class="row">
+  <div class="subHead col-md-8" scroll>
+    <h1>Scope</h1>
+    
+    <p>The goal of this website is to present straightforward and direct content, since the majority of people accessing the site will be on a mobile device, a mobile-first design was a high priority. A participatory aspect of sharing stories would help echo the impact of the outreach. This would require the inclusion of a "stories" section. A form to enter stories and a CMS built with all CRUD operations for a content editor to be able to easily manage the site.   
+    </p>
+    <p>
+      Since this site's goal was quick access to a small amount of content, a flat hierarchy was structured with minimal naviagtion. The CMS was also very small, with no foreign key relations or constraints, but still needed to be intuitive to use and perform all CRUD operations. A large concern was that the previous site did not reflect the spirit of the outreach. A bright, engaging and clear layout was designed and executed with subtle CSS transitions to add interest.
+      
+    </p>
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>UX design</li>
+      <li>MySQL Database design</li>
+      <li>Custom CMS build</li>
+      <li>Responsive Front-end on Foundation</li>
+      <li>Heroku hosting</li>
+    </ul>
+  </div>
+
+
+<div class="sidebar col-md-4" scroll>
+<div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/smallthings/admin.png" alt>
+    <div class="additonal-caption">
+    <p>A custom admin build was created to review stories submitted and add them to the site. The CMS performs CRUD operations through object-oriented PHP with a MYSQL database.</p>
+    </div>
+    </div>
+    
+    
+    <div class="additional"><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/smallthings/archive.png" alt>
+    <div class="additonal-caption">
+    <p>The old site felt very outdated. There was a limited amount of useful content and the design did not acccurately reflect the outreach program.</p>
+    </div>
+    </div>
+ 
+</div> 
+ 
+</div>
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/php.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/mysql.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/jquery.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/foundation3.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/heroku-Logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/analytics.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/photoshop.png" alt></div>
+    </div>
+  </div>
+  
+</div>
+</div>
