@@ -23,71 +23,71 @@ angular.module('app', ['ngRoute', 'rbFramework'])
         };
     })
 
-.directive('preserveHeight', function($timeout, $window, $location) {
-        return {
-            restrict: 'A',
-            link: function(scope, element, attrs) {
-              
-              
-              var setHeight = function(){
-                  $timeout(function(){
-                    $('.image-not-loaded').css('height', $('.image-loaded').height());
-                    $('.image-viewer').css('max-height', $('.image-viewer').height());
-                  },1000);
-              }
-              
-              
-              var setImageViewerHeight = function(){
-                $('.image-viewer').css('max-height', $('.image-viewer').height());
-              }
-              
-               var prevNumber;
-               $($window).on('resize.preserveHeight', function(){
-                    var sameNumber;
-                    $('.image-loader').css('height', 'auto');
-                    setImageViewerHeight();
-                    setHeight();
-                    var checkNumber = $('.image-viewer').height();
-                    if(checkNumber === prevNumber){
-                      $('.image-viewer').css('max-height', '100%');
-                    };
-                    $timeout(function(){
-                      prevNumber = checkNumber;
-                    },10);
-                });
-              
-              
-                
-              
-              scope.$on('rb-menu-orientation-changed-event', function(evt, data){
-                    if(!data.isMenuVertical){
-                      $('.image-viewer').css('max-height', '130%');
-                    }else{
-                    
-                   $('.image-viewer').css('max-height', '100%');
-                    $('.image-loader').css('height', 'auto');
-                    console.log(data);
-                    setImageViewerHeight();
-                    setHeight();
-                    }
-              });
-              
-              scope.$on('$locationChangeSuccess', function(evt, data){
-                $timeout(function(){
-                setImageViewerHeight();
-                },1000)  
-              });
-              
-              
-              
-              $timeout(function(){
-              setHeight();
-              setImageViewerHeight();
-              },1000)
-
-            }
-        };
-    })
+//.directive('preserveHeight', function($timeout, $window, $location) {
+//        return {
+//            restrict: 'A',
+//            link: function(scope, element, attrs) {
+//              
+//              
+//              var setHeight = function(){
+//                  $timeout(function(){
+//                    $('.image-not-loaded').css('height', $('.image-loaded').height());
+//                    $('.image-viewer').css('max-height', $('.image-viewer').height());
+//                  },1000);
+//              }
+//              
+//              
+//              var setImageViewerHeight = function(){
+//                $('.image-viewer').css('max-height', $('.image-viewer').height());
+//              }
+//              
+//               var prevNumber;
+//               $($window).on('resize.preserveHeight', function(){
+//                    var sameNumber;
+//                    $('.image-loader').css('height', 'auto');
+//                    setImageViewerHeight();
+//                    setHeight();
+//                    var checkNumber = $('.image-viewer').height();
+//                    if(checkNumber === prevNumber){
+//                      $('.image-viewer').css('max-height', '100%');
+//                    };
+//                    $timeout(function(){
+//                      prevNumber = checkNumber;
+//                    },10);
+//                });
+//              
+//              
+//                
+//              
+//              scope.$on('rb-menu-orientation-changed-event', function(evt, data){
+//                    if(!data.isMenuVertical){
+//                      $('.image-viewer').css('max-height', '130%');
+//                    }else{
+//                    
+//                   $('.image-viewer').css('max-height', '100%');
+//                    $('.image-loader').css('height', 'auto');
+//                    console.log(data);
+//                    setImageViewerHeight();
+//                    setHeight();
+//                    }
+//              });
+//              
+//              scope.$on('$locationChangeSuccess', function(evt, data){
+//                $timeout(function(){
+//                setImageViewerHeight();
+//                },1000)  
+//              });
+//              
+//              
+//              
+//              $timeout(function(){
+//              setHeight();
+//              setImageViewerHeight();
+//              },1000)
+//
+//            }
+//        };
+//    })
 
 
 
