@@ -1,7 +1,8 @@
 
 angular.module('rbFramework')
 .controller('rbFrameworkController', function($scope, $rootScope, $window, $timeout, $location, $routeParams, $route){
-  
+      
+    
     $scope.isMenuVisible = true;
     $scope.isMenuButtonVisible = true;
     $scope.isMenuVertical = true;
@@ -119,6 +120,15 @@ angular.module('rbFramework')
       determineViewWidth();
       broadcastMenuState();
     },0);
+    
+    $(function() {
+    resizeImages();
+
+    function resizeImages() {
+       setTimeout(resizeImages,5000);
+       $(window).trigger('resize');
+    }
+    });
   
   
 });
