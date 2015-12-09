@@ -1,0 +1,96 @@
+
+
+
+<div class="container-fluid full" ng-class="{'item-horizontal': isVertical()}"> 
+
+ <div class="display-images">
+ 
+ 
+ <div class="display-images">
+<div class="image-viewer">   
+   <div ng-show="!isLoaded" class="image-not-loaded">
+  <i class="fa fa-refresh fa-3x fa-spin"></i>
+</div>  
+ 
+ <div ng-show="isLoaded" class="image-loaded">
+  <img imageonload="imageLoad()" class="loading image-loader" 
+  ng-src="https://vineyardsandbox.s3.amazonaws.com/Rob/rat/{{device}}.png"/>
+</div> 
+ </div>
+  <div class="device-selection">
+     
+      <button class="btn" 
+      ng-class="{'active': device === 'main'}"
+      ng-click="isMain()">Main</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'categories'}"
+      ng-click="isCategories()">Categories</button>
+      
+      
+      <button class="btn" 
+      ng-class="{'active': device === 'ingredients'}"
+      ng-click="isIngredients()">Ingredients</button>
+      
+<!--      <a target="blank" href="https://www.vineyardcincinnati.com/index.php?vcpgid=nigeria-map"><button class="btn"><i class="fa fa-link"></i></button></a>-->
+      
+    </div>
+
+  <div>
+
+  <div class="description">
+    <p>Kroger's microsite CMS was created to provide recipe content to all of Kroger's microsites. In order to work across multiple sites it has been created to be extremely flexible and dynamic. The user interface has undergone multiple rounds of iterations and user-testing.</p>
+  </div>
+  
+<div class="wrapper">  
+  
+  <div class="subHead" scroll>
+    <h1>Context</h1>
+    <p>I came on-board Kroger's microsite team during their second site build. The previous site was required a 14,000 line JSON file which had been entered by hand. The microsite CMS was created to easily build, maintain and update recipes in JSON format for each new microsite. Tabs and fields are dynamilcally added, dropped and validated based on various rules for each microsite.</p>
+    
+  </div>
+  
+  
+<div class="row">  
+  
+  <div class="subHead <col-md-12>  2</col-md-12>" scroll>
+    <h1>Scope</h1>   
+    <p>The CMS is an ongoing poject. The CMS was initially created with a very tight deadline. Modifications and dynamic updates to the UI are continually being added. With each user adding content into the CMS, feedback is alwats evaluated and iterated on to create a better user-experience.    
+    </p>
+   
+    
+    <h1 class="float-margin">Responsibilites</h1>
+    <ul>
+      <li>UX design</li>
+      <li>UI design and development</li>
+      <li>Angular.js, responsive front-end build</li>
+      <li>Node.js RESTful api build</li>
+    </ul>
+  </div>
+
+
+
+
+    
+</div>
+ 
+
+  
+   <div id="technology" class="subHead" scroll>
+    <h1>Technology</h1>
+    <div class="gallery">
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/angularjs.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/nodejs-logo.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/jquery.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/html5.png" alt></div>
+      <div><img src="https://vineyardsandbox.s3.amazonaws.com/Rob/logos/css3.png" alt></div>
+    </div>
+  </div>
+  
+  
+  
+  
+
+</div>
+</div>

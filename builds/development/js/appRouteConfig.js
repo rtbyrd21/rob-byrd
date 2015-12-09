@@ -92,6 +92,12 @@ angular.module('app').config(function($routeProvider, $locationProvider){
       }
     },
     {
+      url: '/recipe-cms',
+      config: {
+        template: '<rb-recipe-cms></rb-recipe-cms>'
+      }
+    },  
+    {
       url: '/',
       config: {
         template: '<rb-about></rb-about>'

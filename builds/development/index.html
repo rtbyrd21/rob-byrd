@@ -26,7 +26,6 @@
   <script src="ext-modules/rbMenu/rbMenuDirective.js"></script>
   <script src="ext-modules/rbMenu/rbMenuItemDirective.js"></script>
   <script src="ext-modules/rbMenu/rbMenuGroupDirective.js"></script>
-  
   <script src="ext-modules/rbDashboard/rbDashboardModule.js"></script>
 
   
@@ -42,6 +41,7 @@
   <script src="js//directives/rbSmallThingsDirective.js"></script>
   <script src="js//directives/rbNigeriaDirective.js"></script>
   <script src="js//directives/rbVinBlogDirective.js"></script>
+  <script src="js//directives/rbRecipeCMS.js"></script>    
   <script src="js//directives/rbHomeDirective.js"></script>
   <script src="js//directives/rbVisibleLanguageDirective.js"></script>
   <script src="js//directives/rbIlluminationSiteDirective.js"></script>
@@ -63,15 +63,16 @@
                 icon-file="">
       <rb-menu>
         <rb-menu-group label="Web" icon="" route="">
-          <rb-menu-item label="Healing Center" icon="" route="healing-center">
+          <rb-menu-item label="Healing Center Cincinnati" icon="" route="healing-center">
             </rb-menu-item>
+          <rb-menu-item label="Visible Language" icon="" route="visible-language"></rb-menu-item>    
+          <rb-menu-item label="Kroger Recipe CMS" icon="" route="recipe-cms"></rb-menu-item>    
           <rb-menu-item label="Small Things" icon="" route="smallthings"></rb-menu-item>
           <rb-menu-item label="H2O Nigeria" route="nigeria"></rb-menu-item>
           {{isMobile}}
           <rb-menu-item label="Vineyard Blog" icon="" route="vineyard-blog"></rb-menu-item>
-          <rb-menu-item label="Visible Language" icon="" route="visible-language"></rb-menu-item>
           <rb-menu-item label="Illumination Letterpress" icon="" route="illumination-site"></rb-menu-item>
-          <rb-menu-item label="ESH.com" icon="" route="esh"></rb-menu-item>
+          <!--<rb-menu-item label="ESH.com" icon="" route="esh"></rb-menu-item>-->
         </rb-menu-group>
         
         <rb-menu-group label="Publication" icon="">
